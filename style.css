@@ -1,56 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap'); /*Oswald Font Import*/
-
-body {
-  font-size: 28px;
-	margin: 0px;
-	padding: 2px;
-	font-family: "Oswald";
-	background-color: #333;
-	background-image: linear-gradient(#333, rgb(116, 116, 116));
+body{
+	margin: 0;
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 header{
-	padding: 100px;
+	font-family: futura-pt, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	text-align: center;
+	text-decoration: underline;
 }
 
-/*Hotbar CSS*/
+/*Top Nav Bar (Stays on the top)*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #111;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  background-color: white;
+  position: fixed;
   top: 0;
+  width: 100%;
 }
 
 li {
   float: left;
+	border-right: 1px solid #bbb;
 }
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: rgb(39, 39, 39);
-	color:white;
+/*li a:hover:not(.active) {
+  background-color: #111;
+}*/
+
+li a:hover:not(.logo){
+  background-color: black;
+	 /*If you hover over it, it goes black*/
+	color: white;
 }
 
 /*.active {
-  background-color: white;
-	color: black;
+  background-color: #04AA6D;
+}*/
+
+.title{
+	text-align: center;
+	text-decoration: underline;
+	background-color: black;
+	color: white;
+	/*margin: 0px, 500px, 0px, 500px;*/
 }
-/*Hotbar CSS End*/
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+
+}
+
+/*table{
+	background-color: black;
+	color: white;
+	margin: 0px;
+}*/
 
 /* Article CSS*/
 article {
-  background: white;
+  background: #9f9f9f;
   border: 3px solid #a0a0a0;
   width: 90%;
   margin: 20px auto;
@@ -58,7 +82,7 @@ article {
   padding: 10px;
 }
 
-hr, article .date {
-  color: #a0a0a0;
+.references{
+	color: white;
+	background-color: black;
 }
-/*End of Article CSS*/
