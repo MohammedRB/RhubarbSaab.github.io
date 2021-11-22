@@ -1,0 +1,88 @@
+body{
+	margin: 0;
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+header{
+	font-family: futura-pt, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/*Top Nav Bar (Stays on the top)*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+	border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*li a:hover:not(.active) {
+  background-color: #111;
+}*/
+
+li a:hover:not(.logo){
+  background-color: black;
+	 /*If you hover over it, it goes black*/
+	color: white;
+}
+
+/*.active {
+  background-color: #04AA6D;
+}*/
+
+.title{
+	text-align: center;
+	text-decoration: underline;
+	background-color: black;
+	color: white;
+	/*margin: 0px, 500px, 0px, 500px;*/
+}
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+
+}
+
+/*table{
+	background-color: black;
+	color: white;
+	margin: 0px;
+}*/
+
+/* Article CSS*/
+article {
+  background: #9f9f9f;
+  border: 3px solid #a0a0a0;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.references{
+	color: white;
+	background-color: black;
+}
